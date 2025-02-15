@@ -1,0 +1,110 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color: black;
+    --second-bg-color: #1f242d;
+    --text-color: #fff;
+    --main-color: #0C74F1;
+}  
+
+html{
+    overflow-x: hidden;
+    --ms-touch-action: auto;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+html::-webkit-scrollbar-track {
+    background: var(--second-bg-color);
+}
+::-webkit-scrollbar-track {
+    background: var(--second-bg-color);
+}
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.body,.hm{
+    background: linear-gradient(rgba(19, 19, 19, 0.5), rgba(24, 24, 24, 0.5)),url('../images/jason-goodman-Oalh2MojUuk-unsplash.jpg') center/cover no-repeat;
+}
+.hero {
+    position: relative;
+    background: linear-gradient(rgba(27, 26, 26, 0.5), rgba(20, 20, 20, 0.5)), url('../images/jason-goodman-Oalh2MojUuk-unsplash.jpg') center/cover no-repeat;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+    margin-bottom:0;
+}
+.hero h1 {
+    font-size: calc(2.5rem + 1vw);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.hero p {
+    font-size: 1.25rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+.features img {
+    border-radius: 10px;
+}
+.cta {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+}
+footer {
+    background-color: #343a40;
+    color: #ddd;
+    margin-top: 50px;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* signnup styling */
+.cont{
+    margin-top: 100px;
+}
+.login-container {
+    background: white;
+    height: 80vh;
+    max-width: 650px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+.schcon{
+    margin-top: 0;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    
+}
+

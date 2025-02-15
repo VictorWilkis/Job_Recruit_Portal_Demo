@@ -1,0 +1,138 @@
+/* default styling */
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color: black;
+    --second-bg-color: #1f242d;
+    --text-color: #fff;
+    --main-color: #0C74F1;
+}  
+
+html{
+    overflow-x: hidden;
+    --ms-touch-action: auto;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+html::-webkit-scrollbar-track {
+    background: var(--second-bg-color);
+}
+::-webkit-scrollbar-track {
+    background: var(--second-bg-color);
+}
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+
+footer {
+    background-color: #343a40;
+    color: #ddd;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background: linear-gradient(rgba(121, 117, 117, 0.5), rgba(82, 78, 78, 0.5)),
+                url('../images/jason-goodman-Oalh2MojUuk-unsplash.jpg') center/cover no-repeat;
+    font-family: 'Arial', sans-serif;
+}
+
+/* login styling */
+.cont{
+    margin-top: 150px;
+}
+
+.login-container {
+    max-width: 650px;
+    margin: 80px auto;
+    padding: 25px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding-top: 20px;
+    position: fixed; /* Keeps the nav fixed on the left */
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+.sidebar h2 {
+    color: white;
+    text-align: center;
+}
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+.sidebar a:hover {
+    background-color: #0056b3;
+}
+.sidebar .logout-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 80%;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px; /* Matches the width of the side nav */
+    padding: 20px;
+    max-width: 100%;
+    height: 100vh;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .side-nav {
+      width: 200px;
+    }
+    
+    .main-content {
+      margin-left: 200px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .side-nav {
+      position: relative;
+      width: 100%;
+      height: auto;
+    }
+    
+    .main-content {
+      margin-left: 0;
+    }
+  }

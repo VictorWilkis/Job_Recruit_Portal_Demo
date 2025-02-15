@@ -1,0 +1,39 @@
+<?php
+    require_once 'Assets/controls/forgot_control.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recurit | Admin Forgot Password</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <?php include 'Assets/includes/navbar.php' ?>
+    <div class="cont">
+        
+    </div>
+    <div class="login-container mt-5">
+        <h3 class="text-center mt-5 mb-5">Admin | Confirm Details</h3>
+        <?php if (isset($error)): ?>
+            <div class="alert alert-danger"><?= $error ?></div>
+        <?php endif; ?>
+        <form method="post">
+            <div class="mb-3">
+                <label>Email:</label>
+                <input type="email" name="username" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label>Phone Number:</label>
+                <input type="phone" name="phone number" class="form-control" required>
+            </div>
+            <button name="confirm" class="btn btn-primary w-100 mt-3">Confirm</button>
+        </form>
+    </div>
+
+</body>
+</html>

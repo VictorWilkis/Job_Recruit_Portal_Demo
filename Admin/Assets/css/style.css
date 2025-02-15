@@ -1,0 +1,119 @@
+/* default styling */
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color: black;
+    --second-bg-color: #1f242d;
+    --text-color: #fff;
+    --main-color: #0C74F1;
+}  
+
+html{
+    overflow-x: hidden;
+    --ms-touch-action: auto;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+html::-webkit-scrollbar-track {
+    background: var(--second-bg-color);
+}
+::-webkit-scrollbar-track {
+    background: var(--second-bg-color);
+}
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+
+body { 
+    background: url('../images/fabio-oyXis2kALVg-unsplash.jpg') center/cover no-repeat;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+/* footer styling */
+footer {
+    background-color: #343a40;
+    color: #ddd;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* login styling */
+.cont{
+    margin-top: 150px;
+}
+
+.cont1{
+    margin-top: 300px;
+}
+
+.login-container {
+    max-width: 500px;
+    margin: 80px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+/* dashboard styling */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #343a40;
+    padding-top: 20px;
+    position: fixed;
+}
+.sidebar h2 {
+    color: white;
+    text-align: center;
+}
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.sidebar a:hover {
+    background-color: #007bff;
+}
+.sidebar .logout-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 80%;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 260px;
+    padding: 20px;
+    width: calc(100% - 260px);
+}
